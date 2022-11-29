@@ -202,7 +202,7 @@
             );
             Navigate(Screen1);
         Size: =24
-        Text: ="주문"
+        Text: ="주문1"
         Width: =280
         X: =180
         Y: =1038
