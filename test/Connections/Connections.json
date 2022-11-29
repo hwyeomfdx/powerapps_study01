@@ -1,0 +1,123 @@
+{
+  "4d7a11a5-363e-485a-9bfa-73c5681dd704": {
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "Office 365 Outlook",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1610/1.0.1610.3093/office365/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_office365",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {},
+    "dataSources": [],
+    "dependencies": {},
+    "dependents": [
+      "a0ec17de-7eff-442a-8344-d72ef6553ac3"
+    ],
+    "id": "4d7a11a5-363e-485a-9bfa-73c5681dd704"
+  },
+  "9e8f677a-0987-4bbf-b9d5-95cc5bb19645": {
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1610-greyhound-localization-RelayFix/1.0.1610.3091/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {
+      "https://fdxnet.sharepoint.com/sites/PowerPlatform": {
+        "dataSources": {
+          "GoodsList": {
+            "tableName": "d7203f09-67be-478c-83d1-78094ae92a46"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "GoodsList"
+    ],
+    "dependencies": {},
+    "dependents": [
+      "a0ec17de-7eff-442a-8344-d72ef6553ac3"
+    ],
+    "id": "9e8f677a-0987-4bbf-b9d5-95cc5bb19645"
+  },
+  "a0ec17de-7eff-442a-8344-d72ef6553ac3": {
+    "connectionParameters": {},
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1534/1.0.1534.2605/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "4d7a11a5-363e-485a-9bfa-73c5681dd704": {
+          "value": "shared_office365"
+        },
+        "9e8f677a-0987-4bbf-b9d5-95cc5bb19645": {
+          "value": "shared_sharepointonline"
+        },
+        "b7b9410a-7470-4324-afbc-12d6060e2a02": {
+          "value": "shared_pl900logistics-5f5b6ab7893492bfdb-5fd0aa3e962488c39b"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "4ce64aba-db42-4bb5-a326-8471f96e1f2b"
+        }
+      },
+      "parameterHintsV2": {
+        "shared_office365": {
+          "value": "4d7a11a5-363e-485a-9bfa-73c5681dd704"
+        },
+        "shared_pl900logistics-5f5b6ab7893492bfdb-5fd0aa3e962488c39b": {
+          "value": "b7b9410a-7470-4324-afbc-12d6060e2a02"
+        },
+        "shared_sharepointonline": {
+          "value": "9e8f677a-0987-4bbf-b9d5-95cc5bb19645"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "4ce64aba-db42-4bb5-a326-8471f96e1f2b"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "GoodsFlow"
+    ],
+    "dependencies": {
+      "shared_office365": "4d7a11a5-363e-485a-9bfa-73c5681dd704",
+      "shared_pl900logistics-5f5b6ab7893492bfdb-5fd0aa3e962488c39b": "b7b9410a-7470-4324-afbc-12d6060e2a02",
+      "shared_sharepointonline": "9e8f677a-0987-4bbf-b9d5-95cc5bb19645"
+    },
+    "dependents": [],
+    "id": "a0ec17de-7eff-442a-8344-d72ef6553ac3"
+  },
+  "b7b9410a-7470-4324-afbc-12d6060e2a02": {
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "PL900Logistics",
+      "iconUri": "https://az787822.vo.msecnd.net/defaulticons/api-dedicated.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_pl900logistics-5f5b6ab7893492bfdb-5fd0aa3e962488c39b",
+      "isCustomApiConnection": true,
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {},
+    "dataSources": [],
+    "dependencies": {},
+    "dependents": [
+      "a0ec17de-7eff-442a-8344-d72ef6553ac3"
+    ],
+    "id": "b7b9410a-7470-4324-afbc-12d6060e2a02"
+  }
+}

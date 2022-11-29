@@ -1,0 +1,47 @@
+[
+  {
+    "ApiId": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
+    "CdpRevision": {
+      "BaseUrl": "/",
+      "LastChangedTimeString": "2022-11-07T21:41:04.6290000Z",
+      "RevisionNumber": 1
+    },
+    "ConnectedDataSourceInfoNameMapping": {
+      "{Attachments}": "첨부 파일",
+      "{Attachments}@odata.type": "{Attachments} ({Attachments}@odata.type)",
+      "{FilenameWithExtension}": "파일 이름(확장명 포함)",
+      "{FullPath}": "전체 경로",
+      "{HasAttachments}": "첨부 파일 있음",
+      "{Identifier}": "ID ({Identifier})",
+      "{IsFolder}": "폴더",
+      "{Link}": "항목 링크",
+      "{ModerationComment}": "이 목록 항목의 콘텐츠 승인과 관련된 메모",
+      "{ModerationStatus}": "콘텐츠 승인 상태",
+      "{Name}": "이름",
+      "{Path}": "폴더 경로",
+      "{Thumbnail}": "축소판 그림",
+      "{TriggerWindowEndToken}": "트리거 창 끝 토큰",
+      "{TriggerWindowStartToken}": "트리거 창 시작 토큰",
+      "{VersionNumber}": "버전 번호",
+      "Author": "만든 사람",
+      "Author#Claims": "만든 사람 Claims",
+      "ComplianceAssetId": "자산 ID 규정 준수",
+      "Created": "만든 날짜",
+      "Editor": "수정한 사람",
+      "Editor#Claims": "수정한 사람 Claims",
+      "field_0": "굿즈명",
+      "field_2": "가격",
+      "field_3": "수량",
+      "ID": "ID",
+      "Modified": "수정된 날짜",
+      "OData__xc2b9__xc778__xd544__xc694__xc5": "승인필요여부",
+      "Title": "아이디"
+    },
+    "DatasetName": "https://fdxnet.sharepoint.com/sites/PowerPlatform",
+    "EncodeDataset": true,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "Name": "GoodsList",
+    "Type": "ConnectedDataSourceInfo"
+  }
+]
